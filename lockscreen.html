@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enter the PIN</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="lockscreen">
+    <h1>🔒 Enter PIN to Unlock</h1>
+    <div class="lockscreen-content">
+      <!-- Cute Photo -->
+      <img src="cute-couple-6976163_1280.png" alt="Cute Image" class="cute-photo">
+
+      <!-- PIN Section with Frame -->
+      <div class="pin-frame">
+        <div class="pin-input-container">
+          <input type="password" id="pinInput" maxlength="4" placeholder="****">
+        </div>
+        <div class="keypad">
+          <button onclick="pressKey(1)">1</button>
+          <button onclick="pressKey(2)">2</button>
+          <button onclick="pressKey(3)">3</button>
+          <button onclick="pressKey(4)">4</button>
+          <button onclick="pressKey(5)">5</button>
+          <button onclick="pressKey(6)">6</button>
+          <button onclick="pressKey(7)">7</button>
+          <button onclick="pressKey(8)">8</button>
+          <button onclick="pressKey(9)">9</button>
+          <button onclick="clearPin()">Clear</button>
+          <button onclick="pressKey(0)">0</button>
+          <button onclick="submitPin()">Enter</button>
+        </div>
+      </div>
+    </div>
+    <!-- Hint Section -->
+    <p class="pin-hint">Hint:your day and my day💖</p>
+    <p id="feedback" class="feedback"></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

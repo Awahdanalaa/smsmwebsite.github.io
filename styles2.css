@@ -1,0 +1,121 @@
+/* Gallery Body */
+.gallery-body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ffe4f0, #d4bdfc);
+    color: #4a2956;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    overflow-y: auto; /* Allow vertical scrolling */
+    box-sizing: border-box;
+  }
+  
+  /* Profile Header */
+  .profile-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 20px 0;
+    padding: 10px;
+    width: 100%;
+    max-width: 900px;
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    z-index: 10;
+    position: relative; /* Ensure the profile header stays within the body */
+    box-sizing: border-box;
+  }
+  
+  /* Profile Picture */
+  .profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid #ff85c8;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Profile Info */
+  .profile-info {
+    text-align: left;
+  }
+  
+  .profile-name {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .profile-bio {
+    font-size: 14px;
+    font-style: italic;
+    color: #6c5b7b;
+  }
+  
+  /* Photo Grid */
+  .photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+    width: 90%;
+    margin: 20px 0;
+    box-sizing: border-box;
+    padding: 20px 0;
+    overflow: auto; /* Allow scrolling if the grid becomes too large */
+  }
+  
+  /* Photo and Video Styles */
+  .photo {
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+  }
+  
+  .photo:hover img {
+    transform: scale(1.05);
+  }
+  
+  /* Gallery Video */
+  .gallery-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s;
+  }
+  
+  .photo:hover .gallery-video {
+    transform: scale(1.05);
+  }
+  
+  /* Back Button */
+  .back-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(135deg, #a469f2, #ff85c8);
+    text-decoration: none;
+    border-radius: 25px;
+    z-index: 100; /* Ensure it's on top */
+  }
+  
+  .back-button:hover {
+    background: linear-gradient(135deg, #ff85c8, #a469f2);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+  }
+
+ 

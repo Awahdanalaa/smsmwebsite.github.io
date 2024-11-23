@@ -1,0 +1,125 @@
+/* Poem Page */
+.poem-body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ff85c8, #d4bdfc);
+    color: #4a2956;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    overflow-y: auto;
+    box-sizing: border-box;
+  }
+  
+  /* Poem Content */
+  .poem-content {
+    max-width: 800px;
+    padding: 20px;
+    margin-top: 50px;
+    text-align: right; /* Align text to the right for Arabic */
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    direction: rtl; /* Ensure text direction for Arabic */
+  }
+  
+  /* Poem Line Animation */
+  .poem-line {
+    opacity: 0;
+    animation: fadeInFromTop 1.5s ease-in-out forwards;
+    margin-bottom: 20px;
+  }
+  
+  .poem-line:nth-child(1) {
+    animation-delay: 0.3s;
+  }
+  
+  .poem-line:nth-child(2) {
+    animation-delay: 0.6s;
+  }
+  
+  .poem-line:nth-child(3) {
+    animation-delay: 0.9s;
+  }
+  
+  .poem-line:nth-child(4) {
+    animation-delay: 1.2s;
+  }
+  
+  .poem-line:nth-child(5) {
+    animation-delay: 1.5s;
+  }
+  
+  .poem-line:nth-child(6) {
+    animation-delay: 1.8s;
+  }
+  
+  .poem-line:nth-child(7) {
+    animation-delay: 2.1s;
+  }
+  
+  .poem-line:nth-child(8) {
+    animation-delay: 2.4s;
+  }
+  
+  .poem-line:nth-child(9) {
+    animation-delay: 2.7s;
+  }
+  
+  .poem-line:nth-child(10) {
+    animation-delay: 3s;
+  }
+  
+  .poem-line:nth-child(11) {
+    animation-delay: 3.3s;
+  }
+  
+  .poem-line:nth-child(12) {
+    animation-delay: 3.6s;
+  }
+  
+  .poem-line:nth-child(13) {
+    animation-delay: 3.9s;
+  }
+  
+  .poem-line:nth-child(14) {
+    animation-delay: 4.2s;
+  }
+  
+  .poem-line:nth-child(15) {
+    animation-delay: 4.5s;
+  }
+  .poem-line:nth-child(16) {
+    animation-delay: 4.9s;
+  }
+  
+  @keyframes fadeInFromTop {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Back Button */
+  .back-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(135deg, #a469f2, #ff85c8);
+    text-decoration: none;
+    border-radius: 25px;
+    z-index: 100;
+  }
+  
+  .back-button:hover {
+    background: linear-gradient(135deg, #ff85c8, #a469f2);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+  }
+  
